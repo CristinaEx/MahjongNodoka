@@ -19,8 +19,8 @@ A simple test of Mahjong AI
 - MahjongAI(MahjongPlayer)
 - - AI模型的搭建，拥有控制部分游戏进程的权限
 
-- MahjongAITrainer(MahjongPlayer)
-- - 训练AI模型
+- MahjongAIPreTrainer(MahjongPlayer)
+- - 预训练AI模型
 
 - MahjongTable
 - - 拥有MahjongMountain对象控制牌山（发牌和岭上牌，杠/里宝牌）
@@ -28,7 +28,8 @@ A simple test of Mahjong AI
 - - 控制四个MahjongPlayer的手牌和明牌区
 - - 记录立直棒
 - - 控制场风和场次
-- - 记录当前MahjongPlayer状态（\[\])
+- - 记录当前MahjongPlayer状态（\[振听 立直 摸牌 大明杠摸牌\]）
 
 - MahjongScoreCounter
 - - 计算提供的手牌得点（需提供MahjongTable）
+- - 计算提供的手牌得分
