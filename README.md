@@ -20,7 +20,10 @@ A simple test of Mahjong AI
 - - AI模型的搭建，拥有控制部分游戏进程的权限
 
 - MahjongAIPreTrainer(MahjongPlayer)
-- - 预训练AI模型
+- - 预训练AI模型（只考虑自摸）
+
+- MahjongAITrainer(MahjongPlayer)
+- - 加入博弈
 
 - MahjongTable
 - - 拥有MahjongMountain对象控制牌山（发牌和岭上牌，杠/里宝牌）
@@ -32,4 +35,4 @@ A simple test of Mahjong AI
 
 - MahjongScoreCounter
 - - 计算提供的手牌得点（需提供MahjongTable）
-- - 计算提供的手牌得分
+- - 计算提供的手牌得分（随机丢弃1-5张牌，随机从牌山取1-5张牌后和牌的加权得点之和）
